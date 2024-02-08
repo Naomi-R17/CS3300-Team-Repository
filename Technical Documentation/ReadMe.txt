@@ -15,5 +15,6 @@ documentation from each member with matching formatting. This document will be t
 submitted to canvas.
 
 The file 'technical_documentation_format' will be for format suggestions or any changes that
-should be made to the official document i.e. different font, layout change, font size change, main and subsystem changes. As well as suggestions or notes on the current documentation 
+should be made to the official document i.e. different font, layout change, font size change,
+main and subsystem changes. As well as suggestions or notes on the current documentation 
 system.
