@@ -2,5 +2,5 @@
 ***
 **Team:**  
 Naomi Rodriguez  
-Irving Bravo Reyes  
+Irving Reyes Bravo  
 Logan Lassiter  
