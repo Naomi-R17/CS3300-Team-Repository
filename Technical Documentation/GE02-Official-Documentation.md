@@ -62,8 +62,6 @@
 ## 2.2 Create Local Git and Github Repository
 
 ^51a15e
-
-^eb2d24
 #### 1. Prepare existing local directory to be added to GitHub
 
 * If you do not have an existing local directory to use for your Github repository create one
