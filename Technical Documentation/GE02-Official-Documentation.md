@@ -54,7 +54,7 @@
 	$ pip install Django==4.2
 	$ python -m django --version
 	```
-	<sup>These commands will let you activate the Django virtual environment, install Django version 4.2, and confirm that you have the right version installed</sup>
+	<sup>These commands will let you activate the Django virtual environment, install Django version 4.2, and confirm that you have the right version installed</sup> 
 	
 	![](images/Pasted%20image%2020240214124051.png)
 	![](images/Pasted%20image%2020240214124114.png)
