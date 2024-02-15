@@ -44,8 +44,8 @@
 	$ python3 --version
 	```
 
-	<sup>You should be using python version 3.11</sup>
-
+	<sub>You should be using python version 3.11</sub>
+	
 	![](images/Pasted%20image%2020240214114533.png)
 
 * Inside of the portfolio directory, run commands:
