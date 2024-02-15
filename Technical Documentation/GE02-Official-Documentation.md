@@ -210,11 +210,120 @@ In PyCharm:
 	{% endblock %}
 	```
 
-<span style="color:red">I did have to modify portfolio_app/urls.py file otherwise a NoReverseMatch at / Error occurs with line 35 in base_template.html</span>
+
+	<sub>**I did have to modify portfolio_app/urls.py file otherwise a *NoReverseMatch* at / Error occurs with line 35 in base_template.html**</sub>
+	![](attachments/Pasted%20image%2020240215135123.png)
+* *Remember to have your server running:*
+	```python
+	python manage.py runserver
+	```
+* Open http://localhost:8000, you should see your index.html file displayed.
+	  ![](attachments/Pasted%20image%2020240215135716.png)
+  
+* Version and update sprint01 and remote repository (I used git).
+  ![](attachments/Pasted%20image%2020240215135837.png)
 
 ***
 ## 2.6 Add static files
 
 ^b92dca
 
+In your portfolio folder
+1. Create a static folder
+2. Create an images folder in the static folder
+3. Add a logo to the images folder. I used [UCCS logo](https://brand.uccs.edu/sites/g/files/kjihxj1416/files/inline-images/uccs-signature-email.gif)
+   
+   ![](attachments/Pasted%20image%2020240215140104.png)
+
+In the *django_project* file
+1. Open settings.py and add the os library
+   
+   ![](attachments/Pasted%20image%2020240215140254.png)
+2.  Add the following code below the STATIC_URL = ‘static/’ line
+	```python
+	STATIC_URL = 'static/'
+	
+	STATICFILES_DIRS = [
+		os.path.join(BASE_DIR, 'static')
+	]
+	
+	MEDIA_URL = '/images/'
+	```
+	
+3.  In base_template.html, paste:
+	```html
+	{% load static %}
+	
+	<!DOCTYPE html>  
+	<html lang="en">  
+	 <head>  
+	   <title>UCCS CS Students</title>  
+	   <meta charset="utf-8">  
+	   <meta name="viewport" content="width=device-width, initial-scale=1">  
+	   <title>Bootstrap demo</title>  
+	   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
+	 </head>  
+	  
+	  
+	 <body>  
+	   <div class="container-fluid">
+	
+	
+	     <!-- Navbar-->
+	     <nav class="navbar navbar-expand-lg bg-body-tertiary">  
+	       <img src="{% static 'images/uccs_logo.gif' %}">  
+	       <div class="container-fluid">  
+	         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">  
+	           <span class="navbar-toggler-icon"></span>  
+	         </button>  
+	         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">  
+	           <div class="navbar-nav">
+	             <!--  {% url 'index' %}  is defined in url path to dynamically create url -->
+	             <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>  
+	             <a class="nav-link" href="#">Menu 2</a>  
+	             <a class="nav-link" href="#">Menu 3</a>
+	             {% if user.is_authenticated %}
+	               <a class="nav-link" href="{% url 'logout' %}?next={{ request.path }}">Logout {{user}}</a>
+	             {% else %}
+	               <a class="nav-link" href="{% url 'login' %}?next={{ request.path }}">Login</a>
+	             {% endif %}
+	           </div>  
+	         </div>  
+	       </div>  
+	     </nav>  
+	  
+	  
+	       <div class="col-sm-10">
+	         <!-- add block content from html template -->
+	         {% block content %}  
+	         {% endblock %}
+	       </div>  
+	     </div>  
+	   </div>  
+	 </body>  
+	</html>
+	```
+	
+	<sup>The only changes made were the top of the document has `{% load static %}`
+	Line 21 is replaced with `<img src="{% static 'images/uccs_logo.gif' %}">`
+	</sup>
+
+* Open http://localhost:8000 and your logo will be added to the Navbar
+  
+	  ![](attachments/Pasted%20image%2020240215142342.png)
+
+* Version sprint01 branch and update your remote repository.
+
+* Update your main branch by merging it with sprint01 branch code and tag the code as GE02. Do not delete sprint01 branch.
+  
+	  ![](attachments/Pasted%20image%2020240215143104.png)
+
+Here is a guide on merging branches [link](https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/syncing-your-branch-in-github-desktop)
+* Or in the terminal:
+	```bash
+	git checkout main
+	git merge sprint01
+	git commit -m "merge sprint01 to main"
+	git push origin main
+	```
 ***
