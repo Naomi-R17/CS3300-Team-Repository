@@ -219,6 +219,7 @@ In PyCharm:
 	python manage.py runserver
 	```
 * Open http://localhost:8000, you should see your index.html file displayed.
+  
 	  ![](attachments/Pasted%20image%2020240215135716.png)
   
 * Version and update sprint01 and remote repository (I used git).
