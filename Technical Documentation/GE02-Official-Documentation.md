@@ -7,22 +7,19 @@
 ***
 ## Table of Contents
 
-[[GE02-Official-Documentation#^5c2d37|Getting Started]]
+[Getting Started](GE02-Official-Documentation.md#^5c2d37)
 
-[[GE02-Official-Documentation#^2f7398 |2.1 Create Virtual Environment and Django Project]] `Logan`
-[2.1 Create Virtual Environment and Django Project](GE02-Official-Documentation.md#^2f7398)
+[2.1 Create Virtual Environment and Django Project](GE02-Official-Documentation.md#^2f7398) `Logan`
 
+[2.2 Create Local Git and Github Repository](GE02-Official-Documentation.md#^51a15e) `Logan`
 
-[[GE02-Official-Documentation#^eb2d24|2.2 Create Local Git and Github Repository]] `Logan`
+[2.3 Create Portfolio App](GE02-Official-Documentation.md#^37a45a) `Irving`
 
-[[GE02-Official-Documentation#^37a45a|2.3 Create Portfolio App]] `Irving`
+[2.4 Define URI path and view](GE02-Official-Documentation.md#^4bb8fe) `Irving`
 
-[[GE02-Official-Documentation#^4bb8fe|2.4 Define URI path and view]] `Irving`
+[2.5 Create HTML Template](GE02-Official-Documentation.md#^c457bf) `Naomi`
 
-[[GE02-Official-Documentation#^c457bf|2.5 Create HTML Template]] `Naomi`
-
-[[GE02-Official-Documentation#^b92dca|2.6 Add static files]] `Naomi`
-[2.6 Add static files](GE02-Official-Documentation.md#^b92dca)
+[2.6 Add static files](GE02-Official-Documentation.md#^b92dca) `Naomi`
 
 ***
 
@@ -63,6 +60,8 @@
 	![[Pasted image 20240214124114.png]]
 ***
 ## 2.2 Create Local Git and Github Repository
+
+^51a15e
 
 ^eb2d24
 #### 1. Prepare existing local directory to be added to GitHub
