@@ -46,7 +46,7 @@
 
 	<sup>You should be using python version 3.11</sup>
 
-![[images/Pasted image 20240214114533.png]]
+![](images/Pasted%20image%2020240214114533.png)
 
 * Inside of the portfolio directory, run commands:
 	```bash
