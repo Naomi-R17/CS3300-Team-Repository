@@ -11,7 +11,7 @@
 
 [2.1 Create Virtual Environment and Django Project](GE02-Official-Documentation.md#^2f7398) `Logan`
 
-[2.2 Create Local Git and Github Repository](GE02-Official-Documentation.md#^51a15e) `Logan`
+[2.2 Create Local Git and GitHub Repository](GE02-Official-Documentation.md#^51a15e) `Logan`
 
 [2.3 Create Portfolio App](GE02-Official-Documentation.md#^37a45a) `Irving`
 
