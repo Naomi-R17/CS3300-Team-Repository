@@ -45,7 +45,8 @@
 	```
 
 	<sup>You should be using python version 3.11</sup>
-	![[images/Pasted image 20240214114533.png]]
+
+![[images/Pasted image 20240214114533.png]]
 
 * Inside of the portfolio directory, run commands:
 	```bash
@@ -54,6 +55,7 @@
 	$ python -m django --version
 	```
 	<sup>These commands will let you activate the Django virtual environment, install Django version 4.2, and confirm that you have the right version installed</sup>
+	
 	![[Pasted image 20240214124051.png]]
 	![[Pasted image 20240214124114.png]]
 ***
