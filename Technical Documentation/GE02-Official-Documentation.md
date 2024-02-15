@@ -56,8 +56,8 @@
 	```
 	<sup>These commands will let you activate the Django virtual environment, install Django version 4.2, and confirm that you have the right version installed</sup>
 	
-	![[Pasted image 20240214124051.png]]
-	![[Pasted image 20240214124114.png]]
+	![](images/Pasted%20image%2020240214124051.png)
+	![](images/Pasted%20image%2020240214124114.png)
 ***
 ## 2.2 Create Local Git and Github Repository
 
@@ -70,7 +70,7 @@
 	```bash
 	$ mkdir [directory-name]
 	```
-	![[Pasted image 20240214125813.png]]
+	![](images/Pasted%20image%2020240214125813.png)
 	
 	Here is a guide to [create a repo from an existing local directory](https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github)
 * Use the following commands (if you run into trouble revert to linked guide):
@@ -87,7 +87,7 @@
 	4. stage the files for initial commit
 	5. commits/saves changes and prepares them to be pushed
 	   
-	![[Pasted image 20240214130457.png]]
+	![](images/Pasted%20image%2020240214130457.png)
 #### 2. Create and link GitHub repo with local directory.
 * Create a new repository on GitHub.com
 	*  Make the repository private
@@ -102,7 +102,7 @@
 	1. links local directory to GitHub Repo
 	2. verifies link was successful
 	
-	![[Pasted image 20240214132419.png]]
+	![](images/Pasted%20image%2020240214132419.png)
 
 #### 3. Push changes in local directory to GitHub.com
 * Run the following command:
