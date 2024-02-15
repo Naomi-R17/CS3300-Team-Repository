@@ -54,7 +54,8 @@
 	$ pip install Django==4.2
 	$ python -m django --version
 	```
-	<sup>These commands will let you activate the Django virtual environment, install Django version 4.2, and confirm that you have the right version installed</sup> 
+	<sup> These commands will let you activate the Django virtual environment, install Django version 4.2, and confirm that you have the right version installed
+	</sup> 
 	
 	![](attachments/Pasted%20image%2020240215124132.png)
 	![](attachments/Pasted%20image%2020240215124140.png)
@@ -109,6 +110,11 @@
 	```
 	
 	![](attachments/Pasted%20image%2020240215123900.png)
+#### .gitignore
+
+You can setup [gitignore](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files) files so, that Git ignores files you do not want added to GitHub.
+
+[Here](https://gist.github.com/octocat/9257657) is an example of a gitignore file.
 ***
 ## 2.3 Create Portfolio App
 
@@ -123,6 +129,88 @@
 ## 2.5 Create HTML Template
 
 ^c457bf
+
+In PyCharm:
+* Create a folder called templates in portfolio_app
+* In templates, create a folder called portfolio_app
+  
+  ![](attachments/Pasted%20image%2020240215130935.png)
+*  Create a base_template.html file in the templates/portfolio_app folder
+  
+	  ![](attachments/Pasted%20image%2020240215131155.png)
+
+* In the base_template file, paste the following code:
+	```html
+	{% load static %}
+	<!DOCTYPE html>  
+	<html lang="en">  
+	 <head>  
+	   <title>UCCS CS Students</title>  
+	   <meta charset="utf-8">  
+	   <meta name="viewport" content="width=device-width, initial-scale=1">  
+	   <title>Bootstrap demo</title>  
+	   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
+	 </head>  
+	  
+	  
+	 <body>  
+	   <div class="container-fluid">
+	
+	
+		 <!-- Navbar-->
+		 <nav class="navbar navbar-expand-lg bg-body-tertiary">  
+		   <a class="navbar-brand" href="#">Navbar</a>
+	
+		   <div class="container-fluid">  
+			 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">  
+			   <span class="navbar-toggler-icon"></span>  
+			 </button>  
+			 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">  
+			   <div class="navbar-nav">
+				 <!--  {% url 'index' %}  is defined in url path to dynamically create url -->
+				 <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>  
+				 <a class="nav-link" href="#">Menu 2</a>  
+				 <a class="nav-link" href="#">Menu 3</a>
+				 {% if user.is_authenticated %}
+				   <a class="nav-link" href="{% url 'logout' %}?next={{ request.path }}">Logout {{user}}</a>
+				 {% else %}
+				   <a class="nav-link" href="{% url 'login' %}?next={{ request.path }}">Login</a>
+				 {% endif %}
+			   </div>  
+			 </div>  
+		   </div>  
+		 </nav>  
+		   <div class="col-sm-10">
+			 <!-- add block content from html template -->
+			 {% block content %}  
+			 {% endblock %}
+		   </div>  
+		 </div>  
+	   </div>  
+	 </body>  
+	</html>
+	```
+* Create an index.html file in the templates/portfolio_app folder
+  
+  ![](attachments/Pasted%20image%2020240215132429.png)
+  
+* Paste the following code into it:
+	<sub>This will be the home page for the app.</sub>
+		
+	```html
+	<!-- inherit from base.html-->
+	{% extends "portfolio_app/base_template.html" %}
+	
+	<!-- Replace block content in base_template.html -->
+	{% block content %}
+	<h1>Computer Science Portfolios</h1>  
+	  
+	<h2>More to come from [and your name goes here]</h2>
+	
+	{% endblock %}
+	```
+
+<span style="color:red">I did have to modify portfolio_app/urls.py file otherwise a NoReverseMatch at / Error occurs with line 35 in base_template.html</span>
 
 ***
 ## 2.6 Add static files
