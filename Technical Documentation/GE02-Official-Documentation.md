@@ -22,6 +22,7 @@
 [[GE02-Official-Documentation#^c457bf|2.5 Create HTML Template]] `Naomi`
 
 [[GE02-Official-Documentation#^b92dca|2.6 Add static files]] `Naomi`
+[2.6 Add static files](GE02-Official-Documentation.md#^b92dca)
 
 ***
 
