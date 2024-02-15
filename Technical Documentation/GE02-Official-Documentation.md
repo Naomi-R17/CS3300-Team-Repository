@@ -10,6 +10,8 @@
 [[GE02-Official-Documentation#^5c2d37|Getting Started]]
 
 [[GE02-Official-Documentation#^2f7398 |2.1 Create Virtual Environment and Django Project]] `Logan`
+[2.1 Create Virtual Environment and Django Project](GE02-Official-Documentation.md#^2f7398)
+
 
 [[GE02-Official-Documentation#^eb2d24|2.2 Create Local Git and Github Repository]] `Logan`
 
