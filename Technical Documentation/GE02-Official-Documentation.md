@@ -212,6 +212,7 @@ In PyCharm:
 
 
 	<sub>**I did have to modify portfolio_app/urls.py file otherwise a *NoReverseMatch* at / Error occurs with line 35 in base_template.html**</sub>
+	
 	![](attachments/Pasted%20image%2020240215135123.png)
 * *Remember to have your server running:*
 	```python
