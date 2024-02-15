@@ -220,7 +220,7 @@ In PyCharm:
 	```
 * Open http://localhost:8000, you should see your index.html file displayed.
   
-	  ![](attachments/Pasted%20image%2020240215135716.png)
+	![](attachments/Pasted%20image%2020240215135716.png)
   
 * Version and update sprint01 and remote repository (I used git).
   ![](attachments/Pasted%20image%2020240215135837.png)
@@ -312,13 +312,13 @@ In the *django_project* file
 
 * Open http://localhost:8000 and your logo will be added to the Navbar
   
-	  ![](attachments/Pasted%20image%2020240215142342.png)
+	![](attachments/Pasted%20image%2020240215142342.png)
 
 * Version sprint01 branch and update your remote repository.
 
 * Update your main branch by merging it with sprint01 branch code and tag the code as GE02. Do not delete sprint01 branch.
   
-	  ![](attachments/Pasted%20image%2020240215143104.png)
+	 ![](attachments/Pasted%20image%2020240215143104.png)
 
 Here is a guide on merging branches [link](https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/syncing-your-branch-in-github-desktop)
 * Or in the terminal:
