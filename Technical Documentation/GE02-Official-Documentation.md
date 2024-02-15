@@ -107,6 +107,8 @@
 	```bash
 	$ git push -u origin main
 	```
+	
+	![](attachments/Pasted%20image%2020240215123900.png)
 ***
 ## 2.3 Create Portfolio App
 
