@@ -101,7 +101,7 @@
 	1. links local directory to GitHub Repo
 	2. verifies link was successful
 	
-	![](images/Pasted%20image%2020240214132419.png)
+	![](attachments/Pasted%20image%2020240214132419.png)
 
 #### 3. Push changes in local directory to GitHub.com
 * Run the following command:
